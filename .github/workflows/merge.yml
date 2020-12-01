@@ -1,4 +1,4 @@
-name: Auto after CI
+name: Github Actions - Auto after CI
 
 on:
     workflow_run:
