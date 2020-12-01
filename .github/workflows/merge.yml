@@ -17,4 +17,4 @@ jobs:
                   ref: release
             - run: git branch
             - run: git fetch --all
-            - run: git branch
+            - run: git merge develop
