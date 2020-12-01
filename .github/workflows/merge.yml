@@ -6,7 +6,6 @@ on:
         branches: [develop]
         types:
             - completed
-            - requested
 
 jobs:
     merge:
@@ -16,4 +15,6 @@ jobs:
             - uses: actions/checkout@v2
               with:
                   ref: release
+            - run: git branch
+            - run: git fetch --all
             - run: git branch
