@@ -1,0 +1,27 @@
+{
+    "name": "github-tests",
+    "version": "1.0.0",
+    "description": "This is a simple github repository to test all the features of github without messing around in my other existing repositories.",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js",
+        "dev": "nodemon index.js",
+        "test": "jest"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/JeremyGillard/github-tests.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/JeremyGillard/github-tests/issues"
+    },
+    "homepage": "https://github.com/JeremyGillard/github-tests#readme",
+    "dependencies": {
+        "express": "^4.17.1",
+        "jest": "^26.6.3",
+        "supertest": "^6.0.1"
+    }
+}
