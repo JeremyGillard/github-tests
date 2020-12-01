@@ -8,6 +8,6 @@ describe('server', () => {
 
     it('should work', async() => {
         const res = await request(server).get('/');
-        expect(res.body).toHaveProperty('message', 'Hello World!');
+        expect(res.body).toHaveProperty('message', 'Hello World!!');
     })
 })
