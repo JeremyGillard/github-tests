@@ -1,0 +1,20 @@
+name: Auto after CI
+
+on:
+    workflow_run:
+        workflows: ["Node CI"]
+        branches: [develop]
+        types:
+            - completed
+            - requested
+
+jobs:
+    merge:
+        runs-on: ubuntu-latest
+
+        steps:
+            - uses: actions/checkout@v2
+              with:
+                  ref: release
+            - run: git merge develop
+            - run: git push origin release
